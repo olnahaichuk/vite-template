@@ -1,0 +1,20 @@
+// @use "../utils/mixin";
+// @use "../utils/variables" as v;
+@use "../utils" as fwrd;
+
+.budge {
+   @include fwrd.budge-base();
+}
+
+.budge-completed {
+    background-color: fwrd.$completed;
+    // color: fwrd.$budge-cl;
+}
+
+.budge-ended {
+    background-color: fwrd.$ended;
+}
+
+.budge-active {
+    background-color: fwrd.$active;
+}
